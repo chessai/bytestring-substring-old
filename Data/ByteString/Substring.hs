@@ -1,6 +1,6 @@
 {-# LANGUAGE BangPatterns #-}
 
-{-# OPTIONS_GHC -Wall -Werror -fno-warn-unused-imports #-}
+{-# OPTIONS_GHC -Wall #-}
 
 module Data.ByteString.Substring
   ( breakSubstringLazy
@@ -21,8 +21,6 @@ import Control.Monad.ST (RealWorld)
 import System.IO.Unsafe (unsafePerformIO)
 import qualified Data.ByteString.Lazy as LB
 import qualified Data.ByteString.Lazy.Internal as LBI
-
-import Data.Char (chr)
 
 breakSubstringLazy ::
      ByteString -- ^ needle, strict bytestring
