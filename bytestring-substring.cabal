@@ -18,8 +18,9 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     Data.ByteString.Substring
+                       Pipes.ByteString.Substring 
   -- other-modules:       
   other-extensions:    BangPatterns
-  build-depends:       base >=4.10 && <4.11, bytestring >=0.10 && <0.11, primitive
+  build-depends:       base >=4.10 && <4.11, bytestring >=0.10 && <0.11, pipes, primitive
   -- hs-source-dirs:      
   default-language:    Haskell2010
